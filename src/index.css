@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  background: linear-gradient(90deg, #ffffff, #c3dbf8, #66d1ff);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: linear-gradient(to right, #ffffff, #4bc9ff);
+}
+
+.chat-wrapper {
+  width: 100%;
+  max-width: 700px;
+  height: 80vh;
+  background: #1e293b;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.chat-header {
+  background: #334155;
+  color: white;
+  padding: 20px;
+  border-bottom: 1px solid #475569;
+}
+
+.chat-header h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.chat-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  gap: 12px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f2027 100%);
+
+
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding-bottom: 80px;
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: #1e293b;
+  border-top: 1px solid #475569;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.send-button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background: #1d4ed8;
+}
+
+.message-row {
+  display: flex;
+}
+
+.user-row {
+  justify-content: flex-end;
+}
+
+.bot-row {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 12px 16px;
+  border-radius: 18px;
+  line-height: 1.4;
+  font-size: 15px;
+  word-break: break-word;
+
+}
+
+.user-bubble {
+  background: #2563eb;
+  color: white;
+  border-bottom-right-radius: 6px;
+}
+
+.bot-bubble {
+  background: #334155;
+  color: white;
+  border-bottom-left-radius: 6px;
+}
+
+/* TOP HALF IMAGE */
+.hrImage {
+  height: 75vh;
+  width: 100%;
+
+  background-image: url("./hotel1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+
+  overflow: hidden; 
+  isolation:isolate;
+}
+
+.hrHeader {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: linear-gradient(to right, #ffffff, #4bc9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 224px;
+  font-weight: bold;
+  font-family: "Century Gothic";
+}
+.loginBox{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    margin: 0;
+    
+}
+.loginHeader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background:linear-gradient(to right, #383838, #0a3b50);
+  margin-top: 0;
+  padding: 40px 90px 40px 90px;
+  border: 3px solid rgb(247, 247, 247);
+  border-radius: 45px;
+  z-index: 1;
+  backdrop-filter: blur(12px); 
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.75);   
+
+}
+.loginHeader input::placeholder {
+  color: #ffffff;   
+  opacity: 0.5;    
+}
+
+.loginHeader h2 {
+  font-size: 5rem;
+  
+  font-family: 'Century Gothic';
+  color: #ebfaff;
+  font-weight: bold;
+}
+
+.loginHeader input:hover{
+  border: 3px solid #ffffff;
+  transition: border 0.2s ease;
+}
+.loginHeader input {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 20px;
+  border: 2px solid #4d7fb4;
+  background-color: #9ebee1ef;
+  text-align: center;
+  color: white;
+}
+
+.loginHeader button {
+  padding: 10px 20px;
+  background-color: #4988C4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
